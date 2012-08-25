@@ -1,0 +1,44 @@
+La langue utilisée est l'anglais.
+
+Interface
+Le nom des fichiers commence impérativement par PMO
+Première lettre de chaque mot en Majuscule, le reste minuscule
+
+Class:
+Le nom des fichiers commence impérativement par PMO_My pour indiquer que c'est une implémentation d'une interface
+Première lettre de chaque mot en Majuscule, le reste minuscule
+
+Methodes
+Premiere lettre en minuscule, et première lettre de chaque mot en Majuscule, le reste en minuscule. 
+Le nom de la methode commence par un verbe en anglais.
+
+Variables:
+variables tout en minuscule
+
+Constante:
+en majuscule
+
+class_loader:
+le nom du fichier php doit être class_<nomdelatable>.php
+le fichier doit être placé dans le répertoire class_loader/
+le nom de la classe a utiliser doit être déclaré dans la class PMO_MyTable_xxx dans cache/
+
+ex d'indentation du code:
+public function getId(){
+		if(isset($this->object_id))
+			return $this->object_id;
+			
+		return FALSE;
+}
+
+les accolades dans les boucles ne doivent être utilisé que si nécéssaire.
+
+autre exemple:
+
+public function getId(){
+		if(isset($this->object_id)){
+			echo("pour exemple");
+			return $this->object_id;
+		}	
+		return FALSE;
+}
